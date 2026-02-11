@@ -1,0 +1,126 @@
+:root{
+    --fundo-1:#f810ed;
+    --fundo-2:#f080ff;
+    --painel:#81f5fd;
+    --destaque:#ae2ff7;
+    --destaque-2:#9745f5;
+    --texto:#fffcfc;
+    --muted:#5fdfff;
+  }
+  
+  *{box-sizing:border-box}
+  
+  body{
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(180deg,var(--fundo-1),var(--fundo-2));
+    color:var(--texto);
+    margin:0;
+    padding-bottom:70px;
+  }
+  
+
+  .navbar{
+    background:#e86ef8;
+    border-bottom:1px solid rgba(228, 88, 221, 0.05);
+  }
+  
+  .navbar-brand,
+  .nav-link{
+    color:var(--texto) !important;
+    transition:0.3s ease;
+  }
+  
+  .nav-link:hover{
+    color:var(--destaque) !important;
+    transform:translateY(-2px);
+  }
+  
+  .nav-link.active{
+    background:var(--destaque);
+    border-radius:8px;
+    padding:8px 14px;
+  }
+  
+
+  .header-hero{
+    padding:60px 0;
+    text-align:center;
+    background:linear-gradient(180deg,rgba(179,0,0,0.08),transparent);
+  }
+  
+  .header-hero h1{
+    font-weight:800;
+    letter-spacing:1px;
+  }
+  
+ 
+  .card{
+    background:var(--painel);
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+    border:1px solid rgba(255,255,255,0.05);
+    overflow:hidden;
+    transition:0.4s ease;
+  }
+  
+  .card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 28px rgba(0,0,0,0.4);
+  }
+  
+  .card img{
+    height:220px;
+    width:100%;
+    object-fit:contain;
+    background:#0b0c10;
+    padding:10px;
+  }
+  
+  .card-title{
+    font-weight:700;
+  }
+  
+ 
+  .btn-main{
+    background:var(--destaque);
+    color:white;
+    border-radius:999px;
+    padding:8px 18px;
+    border:none;
+    transition:0.3s ease;
+  }
+  
+  .btn-main:hover{
+    background:var(--destaque-2);
+  }
+  
+
+  .section-bg{
+    background:rgba(255,255,255,0.03);
+    border-radius:14px;
+    padding:24px;
+  }
+
+  .alerta-maximo {
+    background-color: #ce84ff;
+    color: white;
+  }  
+  
+  footer{
+    background:#0b0c10;
+    color:var(--muted);
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    text-align:center;
+    padding:12px 0;
+    border-top:1px solid rgba(255,255,255,0.05);
+    z-index:999;
+  }
+  
+  @media (max-width:768px){
+    .card img{height:170px}
+    .header-hero{padding:40px 16px}
+  }
+  
